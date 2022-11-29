@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWG</projectKey>
+    <exportDate>2022-11-29 00:47:52 UTC</exportDate>
+    <folders>
+        <folder fullPath="Produto" index="0"/>
+        <folder fullPath="Venda" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="76121065" key="SWG-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Cibele Mallmann</createdBy>
+            <createdOn>2022-11-26 18:23:48 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Produto]]></folder>
+            <issues>
+                <issue>
+                    <key>SWG-2</key>
+                    <summary><![CDATA[Como usuário vendedor desejo cadastrar meus produtos]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[cadastro_produto]]></label>
+            </labels>
+            <name><![CDATA[Step By Step - Cadastro de Produto]]></name>
+            <objective><![CDATA[Como usu&aacute;rio vendedor desejo cadastrar meus produtos.]]></objective>
+            <owner>5c66b4218e2c56571d8bfe6c</owner>
+            <precondition><![CDATA[Usu&aacute;rio vendedor logado no sistema.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Abrir tela de cadastro de produto]]></description>
+                        <expectedResult><![CDATA[Abre a tela de <strong>Cadastro de Produto&nbsp;</strong>conforme padr&atilde;o do sistema]]></expectedResult>
+                        <testData><![CDATA[No menu lateral a direita, clica em <strong>Novo produto</strong>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Informar dados do produto]]></description>
+                        <expectedResult><![CDATA[Sistema preenche corretamente os campos conforme dados inseridos.]]></expectedResult>
+                        <testData><![CDATA[Inseridas dados:&nbsp;<ol><li>T&iacute;tulo (string 100)</li><li>Descri&ccedil;&atilde;o (string 500)</li><li>Valor (int 15)</li></ol>Nesta ordem e conforme padr&atilde;o do sistema.]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Salvar produto]]></description>
+                        <expectedResult><![CDATA[Sistema realiza as seguintes a&ccedil;&otilde;es:<br /><ol><li>Exibe mensagem de sucesso</li><li>Redireciona tela para a listagem de produtos</li><li>Exibe produto corretamente na listagem</li></ol>]]></expectedResult>
+                        <testData><![CDATA[Clicar no bot&atilde;o&nbsp;<strong>Salvar</strong>]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76126612" key="SWG-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Cibele Mallmann</createdBy>
+            <createdOn>2022-11-28 00:11:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Produto]]></folder>
+            <issues>
+                <issue>
+                    <key>SWG-2</key>
+                    <summary><![CDATA[Como usuário vendedor desejo cadastrar meus produtos]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[cadastro_produto]]></label>
+            </labels>
+            <name><![CDATA[BDD -  Acessar tela de cadastro de produto]]></name>
+            <objective><![CDATA[Vendedor deseja acessar tela de cadastro de produto<br /><br />]]></objective>
+            <owner>5c66b4218e2c56571d8bfe6c</owner>
+            <precondition><![CDATA[Vendedor logado no sistema.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o vendedor tenha cadastro no sistema
+And esteja logado
+When acessar a tela de Produtos
+And clicar no botão Adicionar
+Then será redirecionado para tela de cadastro de produto]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76126741" key="SWG-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Cibele Mallmann</createdBy>
+            <createdOn>2022-11-28 00:30:27 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Produto]]></folder>
+            <issues>
+                <issue>
+                    <key>SWG-2</key>
+                    <summary><![CDATA[Como usuário vendedor desejo cadastrar meus produtos]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[cadastro_produto]]></label>
+            </labels>
+            <name><![CDATA[Exploratório - Cadastro de produto]]></name>
+            <objective><![CDATA[Como usu&aacute;rio vendedor desejo cadastrar meus produtos]]></objective>
+            <owner>5c66b4218e2c56571d8bfe6c</owner>
+            <precondition><![CDATA[Usu&aacute;rio vendedor logado no sistema]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="plain">
+                <details><![CDATA[Crit&eacute;rio de aceite:<ul><li>Usu&aacute;rio dever&aacute; visualizar formul&aacute;rio de cadastro de produto.</li><li>Usu&aacute;rio dever&aacute; visualizar bot&atilde;o para acesso ao cadastro de produto.</li><li>Usu&aacute;rio dever&aacute; visualizar bot&atilde;o para acesso a listagem de produto.</li></ul><br /><span style="color: rgb(184,49,47);"><strong><em><u>OU NO CURSO A CAROL MENCIONOU COLOCAR APENAS O CEN&Aacute;RIO:</u></em></strong></span><span style="color: rgb(204,204,204);"><br /></span><p>Cen&aacute;rio: Vendedor deseja acessar tela de cadastro de produto<br />Cen&aacute;rio: Vendedor deseja editar um produto<br />Cen&aacute;rio: Vendedor deseja excluir um produto</p><br /><br /><br />]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76126238" key="SWG-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Cibele Mallmann</createdBy>
+            <createdOn>2022-11-27 22:48:58 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Venda]]></folder>
+            <issues>
+                <issue>
+                    <key>SWG-3</key>
+                    <summary><![CDATA[Como usuário comprador desejo adquirir produtos]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[comprar_produto]]></label>
+            </labels>
+            <name><![CDATA[Step By Step - Comprar produto]]></name>
+            <objective><![CDATA[Como usu&aacute;rio vendedor desejo cadastrar meus produtos]]></objective>
+            <owner>5c66b4218e2c56571d8bfe6c</owner>
+            <precondition><![CDATA[Usu&aacute;rio comprador logado no sistema.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Abrir tela de pesquisa de produto]]></description>
+                        <expectedResult><![CDATA[Abre a tela de <strong>Produtos&nbsp;</strong>conforme padr&atilde;o do sistema]]></expectedResult>
+                        <testData><![CDATA[No menu lateral a direita, clica em <strong>Ver todos produtos</strong>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Adicionar produto no carrinho]]></description>
+                        <expectedResult><![CDATA[Adicionar produto selecionado no carrinho]]></expectedResult>
+                        <testData><![CDATA[Clicar em <strong>Adicionar&nbsp;</strong>em algum produto]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Finalizar compra]]></description>
+                        <expectedResult><![CDATA[Abre tela de <strong>Finalizar compra</strong>]]></expectedResult>
+                        <testData><![CDATA[Clicar no bot&atilde;o <strong>Finalizar compra&nbsp;</strong>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Revisar dados&nbsp;]]></description>
+                        <expectedResult><![CDATA[Dados apresentados conforme o carrinho]]></expectedResult>
+                        <testData><![CDATA[Revisar dados do pedido]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Verificar valor do frete]]></description>
+                        <expectedResult><![CDATA[Exibe endere&ccedil;o e valor do frente]]></expectedResult>
+                        <testData><![CDATA[Na sess&atilde;o de frete, informar cep v&aacute;lido.]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76166529" key="SWG-T7">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Cibele Mallmann</createdBy>
+            <createdOn>2022-11-28 23:02:30 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Venda]]></folder>
+            <issues>
+                <issue>
+                    <key>SWG-3</key>
+                    <summary><![CDATA[Como usuário comprador desejo adquirir produtos]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[comprar_produto]]></label>
+            </labels>
+            <name><![CDATA[BDD -  Acessar tela de carrinho para consultar valor do frete]]></name>
+            <objective><![CDATA[Vendedor deseja verificar o valor do frete.<br /><br />]]></objective>
+            <owner>5c66b4218e2c56571d8bfe6c</owner>
+            <precondition><![CDATA[Vendedor logado no sistema.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o vendedor esteja na tela de listagem de produto
+And clica no ícone do carrinho
+Then informa o CEP e clica no botão Consultar
+When exibe o valor do frete para o comprador]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
