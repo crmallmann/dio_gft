@@ -7,7 +7,7 @@ public class TiposVariaveis {
 		int numeroNormal = numeroCurto;
 		short numeroCurto2 = (short) numeroNormal;
 
-		int numero = 5;
+		int numero = 5; // se a variável tiver final na frente, não permite alteração e escrita em caixa alta
 
 		numero = 10;
 
