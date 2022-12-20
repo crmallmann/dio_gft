@@ -19,3 +19,12 @@ body {
     border: 3px solid #000;
     margin: 10px;
 }
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_image {
+    margin-bottom: 15px;
+}
