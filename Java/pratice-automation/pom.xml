@@ -30,11 +30,12 @@
         <maven.install>3.0.0-M1</maven.install>
     </properties>
 
-    <dependencies>
-        <!-- Dependencies -->
-    
-    
-        <!-- Testing dependencies-->
+<dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.6.0</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
